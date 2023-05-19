@@ -5,6 +5,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 #medium {
     display: flex;
@@ -286,10 +289,9 @@ nav i{
     color: grey;
 }
 #sticky {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: sticky;
-    top: 0;
+    top: 4rem;
 }
