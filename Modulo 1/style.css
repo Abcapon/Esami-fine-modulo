@@ -12,10 +12,10 @@ header {
 #medium {
     display: flex;
     align-items: center;
-    padding-left: 8rem;
+    padding-left: 10vw;
 }
 #medium i {
-    font-size: 2rem;
+    font-size: 2em;
 }
 input {
     border-radius: 15px;
@@ -29,12 +29,12 @@ nav i{
 }
 #t-button {
     background-color: orangered;
-    width: 1.2rem;
+    width: 1.2em;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
-    padding: 0.2rem;
-    margin-left: 0.5rem;
+    padding: 0.2em;
+    margin-left: 0.5em;
 }
 #t-button a{
     text-decoration: none;
@@ -50,15 +50,15 @@ nav i{
 #left-part{
     border-right: 1px solid grey;
     width: 100%;
-    padding-right: 4rem;
+    padding-right: 4em;
 }
 #padding-left {
-    padding-left: 8rem;
+    padding-left: 10vw;
 }
 #header-left {
     display: flex;
     justify-content: start;
-    padding-top: 2rem;
+    padding-top: 2em;
     border-bottom: 1px solid rgb(186, 186, 186);
 }
 #header-left p {
@@ -68,67 +68,70 @@ nav i{
     color: grey;
 }
 #header-left :nth-child(2){
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 .articles {
     display: flex;
-    padding-top: 2rem;
+    padding-top: 2em;
 }
 .article-title {
     display: flex;
     align-items: center;
-    margin-bottom: -1rem;
+    margin-bottom: -1em;
     
 }
 .article-title i {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 .article-title p{
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     
 }
 .articles img{
-    height: 9rem;
-    width: 14rem;
+    height: 20vh;
+    width: 13vw;
     object-fit: cover;
-    padding-top: 1rem;
 }
 .article-text {
     width: 100%;
 }
+.article-text h2{
+    font-size: 1.2em;
+}
 .article-text p{
     color: grey;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
+    font-size: 0.8em;
 }
 .article-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     color: grey;
-    margin-top: -1rem;
+    margin-top: -1em;
 }
 .afooter-info {
     display: flex;
     justify-content: space-evenly;
 }
 .afooter-info p {
-    padding-right: 0.5rem;
+    padding-right: 0.5em;
 }
 .afooter-icon {
     display: flex;
 }
 .afooter-icon i {
-    padding-right: 1rem;
+    padding-right: 1em;
 }
 #right-part {
     text-align: center;
-    width: 35%;
-    padding-left: 4rem;
-    padding-right: 7rem;
-    margin-left: 4rem;
+    width: 38%;
+    padding-left: 4vw;
+    padding-right: 7vw;
+    margin-left: 5vw;
 }
 #twitter {
     border-bottom: 1px solid rgb(186, 186, 186);
@@ -136,18 +139,24 @@ nav i{
 #logos {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-#logos i{
-    font-size: 2rem;
+#logos i:nth-child(1){
+    font-size: 2em;
+}
+#logos i:nth-child(2){
+    font-size: 1.2em;
+    color: grey;
 }
 #logos :nth-child(3) {
-    color: rgb(80, 80, 239);
+    color: #1DA1F2;
+    font-size: 1.2em;
 }
 #twitter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 2em;
 }
 #twitter-link {
     display: flex;
@@ -155,11 +164,20 @@ nav i{
     align-items: center;
     border: 1px solid rgb(186, 186, 186);
     border-radius: 50px;
-    width: 11rem;
+    width: 11em;
 }
 #twitter-link i{
-    color:  rgb(80, 80, 239);
-    padding-right: 0.5rem;
+    color:  #1DA1F2;
+    padding-right: 0.5em;
+    font-size: 1.2em;
+}
+#twitter-link p {
+    margin: 1em;
+    font-size: 0.7em;
+}
+#maybe {
+    font-size: 0.8em;
+    margin-bottom: 2em;
 }
 #maybe a{
     color: grey;
@@ -168,17 +186,19 @@ nav i{
     text-align: left;
 }
 #topics h3{
-    margin-top: 3rem;
+    margin-top: 3em;
+    font-size: 0.9em;
 }
 #topic-list {
     display: flex;
     flex-wrap: wrap;
 }
 #topic-list p {
-    padding: 0.5rem 1rem;
+    padding: 0.7em 1.1em;
     background-color: rgb(230, 230, 230);
     border-radius: 50px;
-    margin: 0 0.5rem 0.8rem 0;
+    margin: 0 0.5em 0.8em 0;
+    font-size: 0.8em;
 }
 #topic-list p a {
     text-decoration: none;
@@ -188,8 +208,9 @@ nav i{
     text-align: left;
 }
 #follow h3 {
-    margin-top: 2rem;
+    margin-top: 2em;
     margin-bottom: 0;
+    font-size: 0.8em;
 }
 .profile {
     display: flex;
@@ -202,29 +223,30 @@ nav i{
     align-items: center;
 }
 .tag img{
-    width: 3rem;
-    height: 3rem;
+    width: 2.7em;
+    height: 2.7em;
     border-radius: 50px;
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 .profile-text {
     text-align: start;
     margin: 0;
 }
 .profile-text h4 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
 }
 .profile-text p {
     color: grey;
-    font-size: 0.8rem;
+    font-size: 0.7em;
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
 }
 .follow-button {
     border: 1px solid grey;
     border-radius: 50px;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
 }
 .follow-button a {
     text-decoration: none;
@@ -234,12 +256,12 @@ nav i{
     text-align: left;
 }
 #saved h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 #saved img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50px;
 }
 .saved-profile {
@@ -248,8 +270,8 @@ nav i{
     margin-bottom: 0;
 }
 .saved-profile p {
-    margin-left: 0.5rem;
-    font-size: 0.8rem;
+    margin-left: 0.5em;
+    font-size: 0.8em;
 }
 .saved-title {
     margin-bottom: 0;
@@ -262,13 +284,14 @@ nav i{
     display: flex;
     align-items: center;
     color: grey;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 .note i{
-    margin-left: 2rem;
+    margin-left: 2em;
 }
 #see-all p{
     color: green;
+    font-size: 0.8em;
 }
 #see-all a{
     text-decoration: none;
@@ -279,9 +302,9 @@ nav i{
     flex-wrap: wrap;
 }
 #right-footer p {
-    padding-right: 1rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    padding-right: 1em;
+    font-size: 0.8em;
+    margin-bottom: 1em;
     margin-top: 0;
 }
 #right-footer a {
@@ -293,5 +316,6 @@ nav i{
     flex-direction: column;
     justify-content: space-between;
     position: sticky;
-    top: 4rem;
+    top: 4em;
+    height: 90vh;
 }
