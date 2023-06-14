@@ -129,19 +129,24 @@ const jobs = [
 ]
 
 
-let count = ``
+
 const save = function(){
+  let count = ``
   let findPositions = []
   const list = document.getElementById('resultList')
+  const counter = document.getElementById(`jobsCounter`)
   while (list.firstChild) {
     list.removeChild(list.firstChild);
+  }
+  while (counter.firstChild) {
+    counter.removeChild(counter.firstChild);
   }
 
   const location = document.getElementById(`location`)
   const title = document.getElementById(`title`)
   const findLocation = location.value
   const findTitle = title.value
-
+  
   let positionFinder = function (location,title){
     for (const objList of jobs) {
       firstStringToLowerCase = objList.location.toLowerCase()
@@ -151,6 +156,11 @@ const save = function(){
       }
       count = findPositions.length
     } 
+
+    const addCounter = document.createElement(`p`)
+    addCounter.textContent = `Sono state trovate ${count} posizioni`
+    counter.appendChild(addCounter)
+
     /* console.log(findPositions)
     console.log(count) */
     return findPositions
@@ -159,9 +169,17 @@ const save = function(){
 
   for (const item of findPositions) {
     const addLi = document.createElement('li')
-    addLi.textContent = JSON.stringify(item).slice(1, -1)
+    addLi.textContent = (`Job: ${item.title}, Location: ${item.location}`)
+    list.appendChild(addLi)
+    
+  }
+  if (count === 0){
+    const addLi = document.createElement('li')
+    addLi.textContent = `Nessun risultato trovato`
     list.appendChild(addLi)
   }
-    /*console.log(`il numero di posizioni trovate è`,count)
+      
+  
+  /*console.log(`il numero di posizioni trovate è`,count)
     console.log(`le posizioni trovate sono`,findPositions)*/
   }

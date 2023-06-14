@@ -1,0 +1,28 @@
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 212, 219);
+}
+header p{
+    color: rgb(61, 99, 99);
+}
+h1 {
+    color: blue;
+}
+#resultList li{
+    color: red;
+    list-style-type: none;
+    padding-top: 1em;
+    padding-right: 2em;
+}
+input {
+    border-radius: 50px;
+    text-align: center;
+}
+button {
+    border-radius: 50px;
+}
+.blueColor {
+    color: blue;
+}
