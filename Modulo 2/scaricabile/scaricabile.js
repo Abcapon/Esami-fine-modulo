@@ -146,7 +146,7 @@ const save = function(){
   const title = document.getElementById(`title`)
   const findLocation = location.value
   const findTitle = title.value
-  
+
   let positionFinder = function (location,title){
     for (const objList of jobs) {
       firstStringToLowerCase = objList.location.toLowerCase()
@@ -158,7 +158,7 @@ const save = function(){
     } 
 
     const addCounter = document.createElement(`p`)
-    addCounter.textContent = `Sono state trovate ${count} posizioni`
+    addCounter.textContent = `${count} RESULTS FOUND:`
     counter.appendChild(addCounter)
 
     /* console.log(findPositions)
@@ -169,17 +169,17 @@ const save = function(){
 
   for (const item of findPositions) {
     const addLi = document.createElement('li')
-    addLi.textContent = (`Job: ${item.title}, Location: ${item.location}`)
+    addLi.innerHTML = (`<span class="colorYellow">Job:</span> ${item.title}<br><span class="colorGreen">Location: </span>${item.location}`)
     list.appendChild(addLi)
     
   }
   if (count === 0){
     const addLi = document.createElement('li')
-    addLi.textContent = `Nessun risultato trovato`
+    addLi.textContent = `No results matching`
     list.appendChild(addLi)
   }
-      
-  
   /*console.log(`il numero di posizioni trovate è`,count)
     console.log(`le posizioni trovate sono`,findPositions)*/
   }
+
+  
